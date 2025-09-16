@@ -1,0 +1,35 @@
+# Evidence pojištění
+
+Tento projekt je konzolová aplikace napsaná v jazyce Python, která slouží k evidenci pojištěných osob.
+
+## 🧾 Funkce aplikace
+
+- Přidání nového pojištěného (jméno, příjmení, věk, telefonní číslo)
+- Výpis všech pojištěných
+- Vyhledání pojištěného podle jména a příjmení
+- Validace vstupu (např. jméno a příjmení nesmí být prázdné)
+
+## 🔧 Použité principy a praktiky
+
+- Objektově orientované programování (OOP)
+- Rozdělení do tříd podle principu SRP (Single Responsibility Principle)
+- Oddělení logiky aplikace a komunikace s uživatelem (SoC – Separation of Concerns)
+- DRY (Don't Repeat Yourself) – opakovaný kód vložen do metod
+- `__str__` metoda pro formátovaný výpis dat
+
+## 📂 Struktura projektu
+
+evidence_pojisteni/
+├── pojisteny.py # Třída reprezentující pojištěnou osobu
+├── evidence.py # Správa seznamu pojištěných
+├── aplikace.py # Uživatelské rozhraní a logika menu
+└── main.py # Spuštění celé aplikace
+
+## ▶️ Spuštění aplikace
+
+1. Otevři terminál nebo příkazový řádek
+2. Přejdi do složky s projektem
+3. Spusť hlavní soubor:
+
+```bash
+python main.py
